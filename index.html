@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HITHA S</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<header>
+    <nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Hamburger Button -->
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1 class="fade in">Hitha Sethu</h1>
+            <h2 class="fade-in">Data Analyst | Python | SQL</h2>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <img src="./images//img2.jpg" alt="Your Name"
+                class="profile-pic">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I am Hitha Sethu, a data analyst passionate about transforming data into actionable insights.
+                    Currently pursuing my studies in data science, I am eager to apply my skills in analysis, machine
+                    learning, and problem-solving to real-world challenges and grow in this exciting field.</p>
+
+                <a href="assets/resume.pdf" download="Hitha_S_Resume.pdf">
+                    <button class="download-btn">Download Resume</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fa-solid fa-brain"></i>
+                <span>Problem Solving</span>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Critical Thinking</span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Data Analysis</span>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Power BI</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Brief description of your project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Another project description.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <h3>Python Basic</h3>
+                <p>Issued by: Hacker Rank</p>
+                <a href="./docs//python basic.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification-card">
+                <h3>SQL Expert</h3>
+                <p>Issued by: Some Organization</p>
+                <a href="certificates/sql_expert.pdf" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>CONNECT WITH ME</h2>
+        <p>Feel free to reach out for inquiries or collaborations!</p>
+        <div class="contact-buttons">
+            <a href="https://www.linkedin.com/in/hitha-s-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank" class="contact-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Hithasethu" target="_blank" class="contact-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:hithasethu@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="tel:+91 7306274462" class="contact-btn">
+                <i class="fas fa-phone"></i> Phone
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Hitha S</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+<script>
+    function openCertificate(url) {
+        window.open(url, '_blank');
+    }
+
+    function callNumber(phoneNumber) {
+        window.location.href = "tel:" + phoneNumber;
+    }
+
+</script>
+
+</html>
