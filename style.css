@@ -55,6 +55,8 @@ body {
     background: #00a8a8;
 }
 
+
+
 .about-container {
     display: flex; /* Makes it side by side */
     align-items: center; /* Aligns items in the middle */
