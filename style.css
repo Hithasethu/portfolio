@@ -8,16 +8,38 @@ body {
         color: white; /* Change 'black' to any color you want */
 
 }
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  /* Stack vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center; /* Force center align */
+}
+
+
 
 /* HERO SECTION */
 .hero {
-    height: 85vh; /* Full screen height */
+    height: 100vh; /* Full screen height */
    
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    padding-top: 60px;
 }
 
 .hero-content {
@@ -324,8 +346,8 @@ footer {
 
 /* Cards */
 .project-card, .certification-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    padding:60px 20px;
     border-radius: 10px;
     text-align: center;
     color: white;
@@ -334,6 +356,7 @@ footer {
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
 }
+
 
 /* Hover Effects */
 .project-card:hover, .certification-card:hover {
@@ -364,11 +387,24 @@ footer {
 }
 
 #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #0d0d0d;  /* Dark background */
-    color: #b3e5fc; /* Light blue text */
+    background-color: #0d0d0d;
+    color: #b3e5fc;
     padding: 50px 20px;
 }
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
 
 .contact-buttons {
     margin-top: 20px;
