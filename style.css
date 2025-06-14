@@ -12,17 +12,18 @@ html, body {
   scroll-behavior: smooth;
   height: 100%;
   margin: 0;
-  scroll-snap-type: y mandatory;
+  scroll-padding-top: 20px;
   overflow-y: scroll;
 }
 section {
-    scroll-snap-align: start;
-    height: 100vh;
+    
+    min-height: 100vh;
     display: flex;
     flex-direction: column;  /* Stack vertically */
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    padding-top: 100px;
     box-sizing: border-box;
     overflow: hidden;
     text-align: center; /* Force center align */
@@ -205,7 +206,7 @@ nav ul li a:hover::after {
       top: 60px;
       right: 0;
       background: #333;
-      width: 200px;
+      width: 100%;
       text-align: right;
       padding: 10px;
     }
@@ -267,6 +268,22 @@ footer {
     background-color: #ebedf0;
 }
 
+@media (max-width: 768px) {
+
+
+  
+  .project-container,
+  .certifications-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .project-card,
+  .certification-card {
+    width: 100%; /* Full width on mobile */
+  }
+}
 
 /* Skill Section */
 #skills {
@@ -283,14 +300,20 @@ footer {
 
 /* Skills Container */
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ensure proper alignment */
-    gap: 20px; /* Add space between items */
-    justify-content: center;
-    align-items: center;
-    max-width: 800px; /* Increase max width */
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  }
+}
+
 
 /* Individual Skill */
 .skill {

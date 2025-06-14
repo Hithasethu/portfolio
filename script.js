@@ -79,5 +79,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+
+// Close menu when clicking outside (only on small screens)
+document.addEventListener("click", function (event) {
+  const navLinks = document.querySelector('.nav-links');
+  const toggleButton = document.querySelector('.menu-toggle');
+
+  const isClickInsideMenu = navLinks.contains(event.target);
+  const isClickOnButton = toggleButton.contains(event.target);
+
+  if (!isClickInsideMenu && !isClickOnButton) {
+    navLinks.classList.remove('active');
+  }
+});
+
 
   
